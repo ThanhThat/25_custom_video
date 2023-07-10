@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>25 Custom Video</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <figure>
+      <!-- State: Play/Pause -->
+      <video id="video" width="320" height="176" data-state="play">
+        <source src="./assets/videos/video1.mp4" type="video/mp4" />
+      </video>
+      <div class="controls">
+        <button class="btn play-pause" data-state="play">
+          <i class="fa-solid fa-play"></i>
+        </button>
+
+        <div class="time">
+          <div class="time1">00:00</div>
+          <span> / </span>
+          <div class="time2"></div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-range"></div>
+        </div>
+
+        <!-- state: ON/OFF -->
+        <div class="volume" data-state="on">
+          <div class="vol-progress">
+            <span class="vol-range" min="0" max="1"></span>
+          </div>
+          <button class="btn btn-vol">
+            <i class="fa-solid fa-volume-low"></i>
+          </button>
+        </div>
+
+        <!-- Full screen -->
+        <button class="btn btn-full-screen" data-state="full">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+    </figure>
+  </body>
+</html>
